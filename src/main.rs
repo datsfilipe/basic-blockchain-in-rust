@@ -57,7 +57,7 @@ impl Block {
     }
 }
 
-impl<'a> Display for Chain {
+impl Display for Chain {
     fn fmt(&self, f: &mut Formatter<'_>) -> Result {
         for block in &self.chain {
             writeln!(f, "Nonce: {}", block.nonce)?;
